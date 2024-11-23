@@ -8,7 +8,7 @@ function ContactMe() {
     message: "",
   });
 
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(" ");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,6 +22,9 @@ function ContactMe() {
         formData
       );
       alert(`Thank You ${formData.name}. Your Message sent successfully!`);
+      {
+        console.log(formData.email);
+      }
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       setStatus("Error sending message. Please try again.");

@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "rohitrkj929@gmail.com", // Your email
-    pass: "eaaz oojk tpfm kfga", // Your email password or app-specific password
+    pass: "eaaz oojk tpfm kfga", // Your app-specific password
   },
 });
 
@@ -24,10 +24,11 @@ app.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
-    from: email,
+    from: email, // Must match the authenticated email
     to: "rohitrkj929@gmail.com", // Your email
     subject: `Message from ${name}`,
-    text: message,
+    text: `You have a new message received from.\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    replyTo: email, // Allows you to reply directly to the sender's email
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
