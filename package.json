@@ -5,6 +5,7 @@
   "homepage": "https://RkJaiswal3.github.io/MyPortfolio",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
