@@ -12,7 +12,7 @@ function Projects() {
       description:
         "This is an online platform to get news of real world at real Time. In it I used the news API in it.",
       image: "/news.png",
-      repo: "https://newstadka.vercel.app",
+      repo: "https://github.com/RkJaiswal3/NewsTadka",
     },
     {
       title: "IBOOK",
