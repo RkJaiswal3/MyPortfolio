@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is included
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Include Bootstrap JS for interactivity
 import Navbar from "./components/Navbar";
