@@ -8,7 +8,7 @@ function Projects() {
       repo: "https://github.com/RkJaiswal3/textFormatingTool?tab=readme-ov-file",
     },
     {
-      title: "GetNews.COM",
+      title: "NewsTadka.COM",
       description:
         "This is an online platform to get news of real world at real Time. In it I used the news API in it.",
       image: "/news.png",
