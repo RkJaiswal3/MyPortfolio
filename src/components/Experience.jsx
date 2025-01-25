@@ -7,6 +7,13 @@ function Experience() {
       description:
         "Developed responsive web applications using php, html, css, jquery and ajax with javascript interactive programming language. ",
     },
+    {
+      role: "React Developer",
+      company: "Mango Software Solution",
+      duration: "Working",
+      description:
+        "Developing a web based application using strong JavaScript/TypeScript proficiency.Expertise in HTML, CSS, and modern styling techniques.Understanding React's lifecycle methods, hooks, and context.",
+    },
   ];
 
   return (

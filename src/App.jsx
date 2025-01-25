@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is included
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Include Bootstrap JS for interactivity
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";

@@ -1,8 +1,15 @@
-function Navbar() {
+function Navbar(props) {
+  const style = {
+    color: "white !important",
+    backgroundColor: "#007bff !important",
+    borderRadius: "5px",
+    transition: "color 0.3s ease, background-color 0.3s ease",
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
-        <a className="navbar-brand fs-3" href="/">
+        <a className="navbar-brand fs-3" href="#">
           <b>RKJ</b>
         </a>
         <button
