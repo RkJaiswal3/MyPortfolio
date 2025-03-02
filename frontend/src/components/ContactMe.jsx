@@ -18,13 +18,13 @@ function ContactMe() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/contact",
+        "http://localhost:5001/contact",
         formData
       );
       alert(`Thank You ${formData.name}. Your Message sent successfully!`);
-      {
-        console.log(formData.email);
-      }
+      // {
+      //   console.log(formData.email);
+      // }
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       setStatus("Error sending message. Please try again.");
