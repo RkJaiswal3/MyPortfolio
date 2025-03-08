@@ -13,20 +13,29 @@ function ContactMe() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
+      const userName = formData.name; // Store before resetting
+
       const response = await axios.post(
         "http://localhost:5001/contact",
         formData
       );
-      alert(`Thank You ${formData.name}. Your Message sent successfully!`);
-      // {
-      //   console.log(formData.email);
-      // }
-      setFormData({ name: "", email: "", message: "" });
+
+      if (response.status === 200 || response.status === 201) {
+        setFormData({ name: "", email: "", message: "" });
+        alert(`Thank You ${userName}. Your message was sent successfully!`);
+      } else if (response.status === 204) {
+        alert(
+          `Thank You ${userName}. Your message was received, but there's no response content.`
+        );
+      } else {
+        setStatus("Unexpected response from the server.");
+      }
     } catch (error) {
+      console.error("Error sending message:", error);
       setStatus("Error sending message. Please try again.");
     }
   };
