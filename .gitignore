@@ -14,7 +14,7 @@ dist-ssr
 backend/.env
 frontend/.env
 backend/node_modules
-
+backend/package-lock.json
 
 # Editor directories and files
 .vscode/*
