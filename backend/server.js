@@ -6,7 +6,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 // Middleware
 app.use(cors());
@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // API Endpoint for contact form
-app.post("/contact", (req, res) => {
+app.post("/", (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
