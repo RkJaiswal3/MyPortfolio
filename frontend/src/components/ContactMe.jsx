@@ -20,7 +20,7 @@ function ContactMe() {
       const userName = formData.name; // Store before resetting
 
       const response = await axios.post(
-        "https://myportfolio-backend-v79c.onrender.com/contact",
+        "https://myportfolio-backend-v79c.onrender.com",
         formData
       );
 
