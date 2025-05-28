@@ -44,7 +44,7 @@ function Skill() {
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              45%
+              60%
             </div>
           </div>
         </div>
