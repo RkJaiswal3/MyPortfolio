@@ -17,7 +17,7 @@ function Projects() {
       repo: "https://github.com/RkJaiswal3/NewsTadka",
     },
     {
-      webLink: "https://recordtext.vercel.app/login",
+      webLink: "https://recordtext.vercel.app",
       title: "IBOOK",
       description:
         "This is the mern base project. In it we can add note and we can modify it by adding and updating our notes.  ",
